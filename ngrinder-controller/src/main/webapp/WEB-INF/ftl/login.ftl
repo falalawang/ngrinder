@@ -98,7 +98,6 @@
 				<span>Remember Me</span>
 				<select id="native_language" name="native_language" style="margin-left:60px;width:80px">
 					<option value="en">English</option>
-					<option value="kr">한국어</option>
 					<option value="cn">中文</option>
 				</select>
 			</div>

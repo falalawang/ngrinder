@@ -135,39 +135,39 @@
 						</ul>
 					</li>
 					<li class="divider-vertical"></li>
-					<li><a href="${helpUrl}" target="_blank"><@spring.message "navigator.help"/></a></li>
+					<li><a href="#"><@spring.message "navigator.help"/></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="container" style="padding-top: 40px;">
-	<div class="<#if announcement?has_content><#else>hidden</#if>" id="announcement_container">
-		<div class="alert alert-block"
-			style="padding:5px 20px; margin-bottom:0;">
-			<div class="page-header" style="margin:0; padding-bottom:2px">
-				<span>
-					<#if announcement_new?? && announcement_new==true>
-						<span class="label label-important">new</span>
-					</#if>
-						<span style="margin-top:0; margin-bottom:0; font-size: 15px">
-						<@spring.message "announcement.title"/>
-						</span>
-						<span class="pointer-cursor pull-right" id="hide_announcement">
-							<i class="<#if announcement_hide?has_content && announcement_hide == true>icon-plus<#else>icon-minus</#if>"
-							   id="announcement_icon">
-							</i>
-						</span>
-					</span>
-			</div>
-			<div style="margin:10px 5px 0;<#if announcement_hide?? && announcement_hide>display:none;</#if>"
-				 id="announcement_content">
-			<#if announcement?has_content>
-				${announcement?replace('\r\n\r\n', '<br />')?replace('\t', '    ')}
-			</#if>
-			</div>
-		</div>
-	</div>
+	<#--<div class="<#if announcement?has_content><#else>hidden</#if>" id="announcement_container">-->
+		<#--<div class="alert alert-block"-->
+			<#--style="padding:5px 20px; margin-bottom:0;">-->
+			<#--<div class="page-header" style="margin:0; padding-bottom:2px">-->
+				<#--<span>-->
+					<#--<#if announcement_new?? && announcement_new==true>-->
+						<#--<span class="label label-important">new</span>-->
+					<#--</#if>-->
+						<#--<span style="margin-top:0; margin-bottom:0; font-size: 15px">-->
+						<#--<@spring.message "announcement.title"/>-->
+						<#--</span>-->
+						<#--<span class="pointer-cursor pull-right" id="hide_announcement">-->
+							<#--<i class="<#if announcement_hide?has_content && announcement_hide == true>icon-plus<#else>icon-minus</#if>"-->
+							   <#--id="announcement_icon">-->
+							<#--</i>-->
+						<#--</span>-->
+					<#--</span>-->
+			<#--</div>-->
+			<#--<div style="margin:10px 5px 0;<#if announcement_hide?? && announcement_hide>display:none;</#if>"-->
+				 <#--id="announcement_content">-->
+			<#--<#if announcement?has_content>-->
+				<#--${announcement?replace('\r\n\r\n', '<br />')?replace('\t', '    ')}-->
+			<#--</#if>-->
+			<#--</div>-->
+		<#--</div>-->
+	<#--</div>-->
 </div>
 <div class="modal hide fade" id="user_profile_modal" role="dialog">
 	<div class="modal-header">
